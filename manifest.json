@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "de-animate",
+  "version": "1.0",
+  "description": "An extension that disables animations, transitions and other effects to make browsing smoother.",
+  "author": "Pablo Verlly (v3rlly)",
+  "homepage_url": "https://github.com/pverlly/de-animate",
+  "icons": {
+    "48": "icons/icon_64px.png",
+    "128": "icons/icon_128px.png"
+  },
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon_64px.png"
+    },
+    "default_title": "de-animate"
+  }
+}

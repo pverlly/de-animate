@@ -1,0 +1,11 @@
+{
+  "name": "de-animate",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Pablo Verlly (v3rlly)",
+  "license": "ISC",
+  "description": "An extension that disables animations, transitions and other effects to make browsing smoother.",
+  "dependencies": {
+    "web-ext": "^8.3.0"
+  }
+}

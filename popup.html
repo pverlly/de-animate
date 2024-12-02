@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        .toggle {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+  <h3>Enable/Disable Features</h3>
+  <div class="toggle">
+      <input type="checkbox" id="disableAnimations" />
+      <label for="disableAnimations">Disable Animations and Transitions</label>
+  </div>
+  <div class="toggle">
+      <input type="checkbox" id="disableWebFonts" />
+      <label for="disableWebFonts">Disable Web Fonts</label>
+  </div>
+  <div class="toggle">
+      <input type="checkbox" id="removeVideos" />
+      <label for="removeVideos">Remove Videos and Iframes</label>
+  </div>
+  <div class="toggle">
+      <input type="checkbox" id="removeImages" />
+      <label for="removeImages">Remove Images</label>
+  </div>
+
+  <script src="./popup.js"></script>
+</body>
