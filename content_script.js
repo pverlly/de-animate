@@ -49,9 +49,14 @@ function disableWebFonts() {
       * {
           font-family: sans-serif !important;
       }
+      
+      *:hover, *:focus {
+          transition: none !important;
+      }
   `;
   document.head.appendChild(fontStyle);
 }
+
 
 function removeVideos() {
   document.querySelectorAll('video, iframe').forEach(el => el.remove());
@@ -69,6 +74,7 @@ function removeVideos() {
   videoObserver.observe(document.body, { childList: true, subtree: true });
 }
 
+
 function removeImages() {
   document.querySelectorAll('img').forEach(img => img.remove());
   const imgObserver = new MutationObserver((mutations) => {
@@ -84,6 +90,7 @@ function removeImages() {
   });
   imgObserver.observe(document.body, { childList: true, subtree: true });
 }
+
 
 function disableAll() {
   disableAnimationsAndTransitions();
